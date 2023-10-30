@@ -1,0 +1,10 @@
+<!-- app/code/Custom/ProductRating/view/frontend/layout/catalog_product_view.xml -->
+
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Custom\ProductRating\Block\ProductRating" name="custom.product.rating" template="Custom_ProductRating::product_rating.phtml" after="-" />
+        </referenceContainer>
+    </body>
+</page>

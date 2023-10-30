@@ -1,0 +1,231 @@
+[2023-10-30T07:31:46.715524+00:00] main.CRITICAL: ReflectionException: Class "" does not exist in /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php:278
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php(278): ReflectionClass->__construct()
+#1 /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php(524): Magento\Framework\Webapi\ServiceInputProcessor->_createFromArray()
+#2 /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php(200): Magento\Framework\Webapi\ServiceInputProcessor->convertValue()
+#3 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest/InputParamsResolver.php(112): Magento\Framework\Webapi\ServiceInputProcessor->process()
+#4 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Webapi\Controller\Rest\InputParamsResolver->resolve()
+#5 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->___callParent()
+#6 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->Magento\Framework\Interception\{closure}()
+#7 /var/www/html/magento2/generated/code/Magento/Webapi/Controller/Rest/InputParamsResolver/Interceptor.php(23): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->___callPlugins()
+#8 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest/SynchronousRequestProcessor.php(85): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->resolve()
+#9 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest.php(202): Magento\Webapi\Controller\Rest\SynchronousRequestProcessor->process()
+#10 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Webapi\Controller\Rest->dispatch()
+#11 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Webapi\Controller\Rest\Interceptor->___callParent()
+#12 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Webapi\Controller\Rest\Interceptor->Magento\Framework\Interception\{closure}()
+#13 /var/www/html/magento2/generated/code/Magento/Webapi/Controller/Rest/Interceptor.php(23): Magento\Webapi\Controller\Rest\Interceptor->___callPlugins()
+#14 /var/www/html/magento2/vendor/magento/framework/App/Http.php(116): Magento\Webapi\Controller\Rest\Interceptor->dispatch()
+#15 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#16 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#17 {main}
+
+Next Exception: Report ID: webapi-653f5be2ae78c; Message: Class "" does not exist in /var/www/html/magento2/vendor/magento/framework/Webapi/ErrorProcessor.php:208
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/Webapi/ErrorProcessor.php(153): Magento\Framework\Webapi\ErrorProcessor->_critical()
+#1 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest.php(208): Magento\Framework\Webapi\ErrorProcessor->maskException()
+#2 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Webapi\Controller\Rest->dispatch()
+#3 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Webapi\Controller\Rest\Interceptor->___callParent()
+#4 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Webapi\Controller\Rest\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /var/www/html/magento2/generated/code/Magento/Webapi/Controller/Rest/Interceptor.php(23): Magento\Webapi\Controller\Rest\Interceptor->___callPlugins()
+#6 /var/www/html/magento2/vendor/magento/framework/App/Http.php(116): Magento\Webapi\Controller\Rest\Interceptor->dispatch()
+#7 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#8 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#9 {main} {"exception":"[object] (Exception(code: -1): Report ID: webapi-653f5be2ae78c; Message: Class \"\" does not exist at /var/www/html/magento2/vendor/magento/framework/Webapi/ErrorProcessor.php:208)
+[previous exception] [object] (ReflectionException(code: -1): Class \"\" does not exist at /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php:278)"} []
+[2023-10-30T07:32:21.931395+00:00] main.CRITICAL: ReflectionException: Class "" does not exist in /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php:278
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php(278): ReflectionClass->__construct()
+#1 /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php(524): Magento\Framework\Webapi\ServiceInputProcessor->_createFromArray()
+#2 /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php(200): Magento\Framework\Webapi\ServiceInputProcessor->convertValue()
+#3 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest/InputParamsResolver.php(112): Magento\Framework\Webapi\ServiceInputProcessor->process()
+#4 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Webapi\Controller\Rest\InputParamsResolver->resolve()
+#5 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->___callParent()
+#6 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->Magento\Framework\Interception\{closure}()
+#7 /var/www/html/magento2/generated/code/Magento/Webapi/Controller/Rest/InputParamsResolver/Interceptor.php(23): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->___callPlugins()
+#8 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest/SynchronousRequestProcessor.php(85): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->resolve()
+#9 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest.php(202): Magento\Webapi\Controller\Rest\SynchronousRequestProcessor->process()
+#10 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Webapi\Controller\Rest->dispatch()
+#11 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Webapi\Controller\Rest\Interceptor->___callParent()
+#12 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Webapi\Controller\Rest\Interceptor->Magento\Framework\Interception\{closure}()
+#13 /var/www/html/magento2/generated/code/Magento/Webapi/Controller/Rest/Interceptor.php(23): Magento\Webapi\Controller\Rest\Interceptor->___callPlugins()
+#14 /var/www/html/magento2/vendor/magento/framework/App/Http.php(116): Magento\Webapi\Controller\Rest\Interceptor->dispatch()
+#15 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#16 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#17 {main}
+
+Next Exception: Report ID: webapi-653f5c05e3299; Message: Class "" does not exist in /var/www/html/magento2/vendor/magento/framework/Webapi/ErrorProcessor.php:208
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/Webapi/ErrorProcessor.php(153): Magento\Framework\Webapi\ErrorProcessor->_critical()
+#1 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest.php(208): Magento\Framework\Webapi\ErrorProcessor->maskException()
+#2 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Webapi\Controller\Rest->dispatch()
+#3 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Webapi\Controller\Rest\Interceptor->___callParent()
+#4 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Webapi\Controller\Rest\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /var/www/html/magento2/generated/code/Magento/Webapi/Controller/Rest/Interceptor.php(23): Magento\Webapi\Controller\Rest\Interceptor->___callPlugins()
+#6 /var/www/html/magento2/vendor/magento/framework/App/Http.php(116): Magento\Webapi\Controller\Rest\Interceptor->dispatch()
+#7 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#8 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#9 {main} {"exception":"[object] (Exception(code: -1): Report ID: webapi-653f5c05e3299; Message: Class \"\" does not exist at /var/www/html/magento2/vendor/magento/framework/Webapi/ErrorProcessor.php:208)
+[previous exception] [object] (ReflectionException(code: -1): Class \"\" does not exist at /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php:278)"} []
+[2023-10-30T07:32:35.641274+00:00] main.CRITICAL: ReflectionException: Class "" does not exist in /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php:278
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php(278): ReflectionClass->__construct()
+#1 /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php(524): Magento\Framework\Webapi\ServiceInputProcessor->_createFromArray()
+#2 /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php(200): Magento\Framework\Webapi\ServiceInputProcessor->convertValue()
+#3 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest/InputParamsResolver.php(112): Magento\Framework\Webapi\ServiceInputProcessor->process()
+#4 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Webapi\Controller\Rest\InputParamsResolver->resolve()
+#5 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->___callParent()
+#6 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->Magento\Framework\Interception\{closure}()
+#7 /var/www/html/magento2/generated/code/Magento/Webapi/Controller/Rest/InputParamsResolver/Interceptor.php(23): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->___callPlugins()
+#8 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest/SynchronousRequestProcessor.php(85): Magento\Webapi\Controller\Rest\InputParamsResolver\Interceptor->resolve()
+#9 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest.php(202): Magento\Webapi\Controller\Rest\SynchronousRequestProcessor->process()
+#10 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Webapi\Controller\Rest->dispatch()
+#11 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Webapi\Controller\Rest\Interceptor->___callParent()
+#12 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Webapi\Controller\Rest\Interceptor->Magento\Framework\Interception\{closure}()
+#13 /var/www/html/magento2/generated/code/Magento/Webapi/Controller/Rest/Interceptor.php(23): Magento\Webapi\Controller\Rest\Interceptor->___callPlugins()
+#14 /var/www/html/magento2/vendor/magento/framework/App/Http.php(116): Magento\Webapi\Controller\Rest\Interceptor->dispatch()
+#15 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#16 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#17 {main}
+
+Next Exception: Report ID: webapi-653f5c139c586; Message: Class "" does not exist in /var/www/html/magento2/vendor/magento/framework/Webapi/ErrorProcessor.php:208
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/Webapi/ErrorProcessor.php(153): Magento\Framework\Webapi\ErrorProcessor->_critical()
+#1 /var/www/html/magento2/vendor/magento/module-webapi/Controller/Rest.php(208): Magento\Framework\Webapi\ErrorProcessor->maskException()
+#2 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Webapi\Controller\Rest->dispatch()
+#3 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Webapi\Controller\Rest\Interceptor->___callParent()
+#4 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Webapi\Controller\Rest\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /var/www/html/magento2/generated/code/Magento/Webapi/Controller/Rest/Interceptor.php(23): Magento\Webapi\Controller\Rest\Interceptor->___callPlugins()
+#6 /var/www/html/magento2/vendor/magento/framework/App/Http.php(116): Magento\Webapi\Controller\Rest\Interceptor->dispatch()
+#7 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#8 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#9 {main} {"exception":"[object] (Exception(code: -1): Report ID: webapi-653f5c139c586; Message: Class \"\" does not exist at /var/www/html/magento2/vendor/magento/framework/Webapi/ErrorProcessor.php:208)
+[previous exception] [object] (ReflectionException(code: -1): Class \"\" does not exist at /var/www/html/magento2/vendor/magento/framework/Webapi/ServiceInputProcessor.php:278)"} []
+[2023-10-30T09:28:07.151567+00:00] main.CRITICAL: Magento\Framework\Exception\LocalizedException: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+One97_Paytm schema: current version - none, required version - 1.0.0
+One97_Paytm data: current version - none, required version - 1.0.0 in /var/www/html/magento2/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(121): Magento\Framework\Module\Plugin\DbStatusValidator->beforeDispatch()
+#1 /var/www/html/magento2/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(71): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#2 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#3 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#4 /var/www/html/magento2/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#5 /var/www/html/magento2/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#6 /var/www/html/magento2/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#7 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#8 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#9 {main} {"report_id":"d0fdd8ad8510b6b307023f715d4026bfd7949dd55536681bc0a0fe69d252b26f","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+One97_Paytm schema: current version - none, required version - 1.0.0
+One97_Paytm data: current version - none, required version - 1.0.0 at /var/www/html/magento2/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83)"} []
+[2023-10-30T09:28:15.881117+00:00] main.CRITICAL: Magento\Framework\Exception\LocalizedException: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+One97_Paytm schema: current version - none, required version - 1.0.0
+One97_Paytm data: current version - none, required version - 1.0.0 in /var/www/html/magento2/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(121): Magento\Framework\Module\Plugin\DbStatusValidator->beforeDispatch()
+#1 /var/www/html/magento2/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(71): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#2 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#3 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#4 /var/www/html/magento2/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#5 /var/www/html/magento2/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#6 /var/www/html/magento2/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#7 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#8 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#9 {main} {"report_id":"d0fdd8ad8510b6b307023f715d4026bfd7949dd55536681bc0a0fe69d252b26f","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+One97_Paytm schema: current version - none, required version - 1.0.0
+One97_Paytm data: current version - none, required version - 1.0.0 at /var/www/html/magento2/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83)"} []
+[2023-10-30T11:32:06.606328+00:00] main.CRITICAL: Magento\Framework\Exception\LocalizedException: Trying to override modular view file '/var/www/html/magento2/app/design/frontend/Medline/hyva_base/Magento_Theme/layout/override/theme/Hyva/default/cms_index_index.xml' for theme 'Hyva/default', which is not ancestor of theme 'Medline/hyva_base' in /var/www/html/magento2/vendor/magento/framework/View/File/Collector/Override/ThemeModular.php:121
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/View/File/Collector/Decorator/ModuleOutput.php(59): Magento\Framework\View\File\Collector\Override\ThemeModular->getFiles()
+#1 /var/www/html/magento2/vendor/magento/framework/View/File/Collector/Decorator/ModuleDependency.php(63): Magento\Framework\View\File\Collector\Decorator\ModuleOutput->getFiles()
+#2 /var/www/html/magento2/vendor/magento/framework/View/Layout/File/Collector/Aggregated.php(93): Magento\Framework\View\File\Collector\Decorator\ModuleDependency->getFiles()
+#3 /var/www/html/magento2/generated/code/Magento/Framework/View/Layout/File/Collector/Aggregated/Proxy.php(95): Magento\Framework\View\Layout\File\Collector\Aggregated->getFiles()
+#4 /var/www/html/magento2/vendor/magento/framework/View/Model/Layout/Merge.php(777): Magento\Framework\View\Layout\File\Collector\Aggregated\Proxy->getFiles()
+#5 /var/www/html/magento2/vendor/magento/framework/View/Model/Layout/Merge.php(725): Magento\Framework\View\Model\Layout\Merge->_loadFileLayoutUpdatesXml()
+#6 /var/www/html/magento2/vendor/magento/framework/View/Model/Layout/Merge.php(598): Magento\Framework\View\Model\Layout\Merge->getFileLayoutUpdatesXml()
+#7 /var/www/html/magento2/vendor/magento/framework/View/Model/Layout/Merge.php(577): Magento\Framework\View\Model\Layout\Merge->_fetchPackageLayoutUpdates()
+#8 /var/www/html/magento2/vendor/magento/framework/View/Model/Layout/Merge.php(496): Magento\Framework\View\Model\Layout\Merge->_merge()
+#9 /var/www/html/magento2/vendor/magento/framework/View/Layout/Builder.php(86): Magento\Framework\View\Model\Layout\Merge->load()
+#10 /var/www/html/magento2/vendor/magento/framework/View/Layout/Builder.php(63): Magento\Framework\View\Layout\Builder->loadLayoutUpdates()
+#11 /var/www/html/magento2/vendor/magento/framework/View/Layout.php(271): Magento\Framework\View\Layout\Builder->build()
+#12 /var/www/html/magento2/vendor/magento/framework/View/Layout.php(896): Magento\Framework\View\Layout->build()
+#13 /var/www/html/magento2/vendor/magento/module-cms/Helper/Page.php(216): Magento\Framework\View\Layout->getBlock()
+#14 /var/www/html/magento2/vendor/magento/module-cms/Controller/Index/Index.php(74): Magento\Cms\Helper\Page->prepareResultPage()
+#15 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Cms\Controller\Index\Index->execute()
+#16 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Cms\Controller\Index\Index\Interceptor->___callParent()
+#17 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Cms\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#18 /var/www/html/magento2/generated/code/Magento/Cms/Controller/Index/Index/Interceptor.php(23): Magento\Cms\Controller\Index\Index\Interceptor->___callPlugins()
+#19 /var/www/html/magento2/vendor/magento/framework/App/Action/Action.php(111): Magento\Cms\Controller\Index\Index\Interceptor->execute()
+#20 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch()
+#21 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Cms\Controller\Index\Index\Interceptor->___callParent()
+#22 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Cms\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#23 /var/www/html/magento2/generated/code/Magento/Cms/Controller/Index/Index/Interceptor.php(32): Magento\Cms\Controller\Index\Index\Interceptor->___callPlugins()
+#24 /var/www/html/magento2/vendor/magento/framework/App/FrontController.php(245): Magento\Cms\Controller\Index\Index\Interceptor->dispatch()
+#25 /var/www/html/magento2/vendor/magento/framework/App/FrontController.php(212): Magento\Framework\App\FrontController->getActionResponse()
+#26 /var/www/html/magento2/vendor/magento/framework/App/FrontController.php(146): Magento\Framework\App\FrontController->processRequest()
+#27 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#28 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#29 /var/www/html/magento2/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#30 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#31 /var/www/html/magento2/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(71): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#32 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#33 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#34 /var/www/html/magento2/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#35 /var/www/html/magento2/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#36 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#37 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#38 {main} {"report_id":"3d7f9cd9b1de45b2f9a44a7856958b593a69a94a2a6c64559c77cc3ca7d122e0","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Trying to override modular view file '/var/www/html/magento2/app/design/frontend/Medline/hyva_base/Magento_Theme/layout/override/theme/Hyva/default/cms_index_index.xml' for theme 'Hyva/default', which is not ancestor of theme 'Medline/hyva_base' at /var/www/html/magento2/vendor/magento/framework/View/File/Collector/Override/ThemeModular.php:121)"} []
+[2023-10-30T11:33:40.654220+00:00] main.CRITICAL: InvalidArgumentException: Required parameter 'theme_dir' was not passed in /var/www/html/magento2/vendor/magento/framework/View/Design/Fallback/Rule/Simple.php:59
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/View/Design/Fallback/Rule/Theme.php(78): Magento\Framework\View\Design\Fallback\Rule\Simple->getPatternDirs()
+#1 /var/www/html/magento2/vendor/magento/framework/View/Design/Fallback/Rule/Composite.php(48): Magento\Framework\View\Design\Fallback\Rule\Theme->getPatternDirs()
+#2 /var/www/html/magento2/vendor/magento/framework/View/Design/Fallback/Rule/ModularSwitch.php(50): Magento\Framework\View\Design\Fallback\Rule\Composite->getPatternDirs()
+#3 /var/www/html/magento2/vendor/magento/framework/View/Design/FileResolution/Fallback/Resolver/Simple.php(118): Magento\Framework\View\Design\Fallback\Rule\ModularSwitch->getPatternDirs()
+#4 /var/www/html/magento2/vendor/magento/framework/View/Design/FileResolution/Fallback/Resolver/Simple.php(61): Magento\Framework\View\Design\FileResolution\Fallback\Resolver\Simple->resolveFile()
+#5 /var/www/html/magento2/vendor/magento/framework/View/Design/FileResolution/Fallback/File.php(42): Magento\Framework\View\Design\FileResolution\Fallback\Resolver\Simple->resolve()
+#6 /var/www/html/magento2/vendor/magento/framework/View/Design/FileResolution/Fallback/TemplateFile.php(82): Magento\Framework\View\Design\FileResolution\Fallback\File->getFile()
+#7 /var/www/html/magento2/vendor/magento/framework/View/FileSystem.php(126): Magento\Framework\View\Design\FileResolution\Fallback\TemplateFile->getFile()
+#8 /var/www/html/magento2/vendor/magento/framework/View/Element/Template/File/Resolver.php(60): Magento\Framework\View\FileSystem->getTemplateFileName()
+#9 /var/www/html/magento2/vendor/magento/framework/View/Element/Template.php(214): Magento\Framework\View\Element\Template\File\Resolver->getTemplateFileName()
+#10 /var/www/html/magento2/vendor/magento/framework/View/Element/Template.php(293): Magento\Framework\View\Element\Template->getTemplateFile()
+#11 /var/www/html/magento2/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Framework\View\Element\Template->_toHtml()
+#12 /var/www/html/magento2/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#13 /var/www/html/magento2/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#14 /var/www/html/magento2/vendor/magento/framework/View/Result/Page.php(251): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#15 /var/www/html/magento2/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#16 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#17 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#18 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#19 /var/www/html/magento2/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(32): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#20 /var/www/html/magento2/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#21 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#22 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#23 {main} {"report_id":"aa87aefd3a4a8b9146126fdbf25672f207f018801825d0d13af628c0ab99d027","exception":"[object] (InvalidArgumentException(code: 0): Required parameter 'theme_dir' was not passed at /var/www/html/magento2/vendor/magento/framework/View/Design/Fallback/Rule/Simple.php:59)"} []
+[2023-10-30T11:33:58.922550+00:00] main.CRITICAL: InvalidArgumentException: Required parameter 'theme_dir' was not passed in /var/www/html/magento2/vendor/magento/framework/View/Design/Fallback/Rule/Simple.php:59
+Stack trace:
+#0 /var/www/html/magento2/vendor/magento/framework/View/Design/Fallback/Rule/Theme.php(78): Magento\Framework\View\Design\Fallback\Rule\Simple->getPatternDirs()
+#1 /var/www/html/magento2/vendor/magento/framework/View/Design/Fallback/Rule/Composite.php(48): Magento\Framework\View\Design\Fallback\Rule\Theme->getPatternDirs()
+#2 /var/www/html/magento2/vendor/magento/framework/View/Design/Fallback/Rule/ModularSwitch.php(50): Magento\Framework\View\Design\Fallback\Rule\Composite->getPatternDirs()
+#3 /var/www/html/magento2/vendor/magento/framework/View/Design/FileResolution/Fallback/Resolver/Simple.php(118): Magento\Framework\View\Design\Fallback\Rule\ModularSwitch->getPatternDirs()
+#4 /var/www/html/magento2/vendor/magento/framework/View/Design/FileResolution/Fallback/Resolver/Simple.php(61): Magento\Framework\View\Design\FileResolution\Fallback\Resolver\Simple->resolveFile()
+#5 /var/www/html/magento2/vendor/magento/framework/View/Design/FileResolution/Fallback/File.php(42): Magento\Framework\View\Design\FileResolution\Fallback\Resolver\Simple->resolve()
+#6 /var/www/html/magento2/vendor/magento/framework/View/Design/FileResolution/Fallback/TemplateFile.php(82): Magento\Framework\View\Design\FileResolution\Fallback\File->getFile()
+#7 /var/www/html/magento2/vendor/magento/framework/View/FileSystem.php(126): Magento\Framework\View\Design\FileResolution\Fallback\TemplateFile->getFile()
+#8 /var/www/html/magento2/vendor/magento/framework/View/Element/Template/File/Resolver.php(60): Magento\Framework\View\FileSystem->getTemplateFileName()
+#9 /var/www/html/magento2/vendor/magento/framework/View/Element/Template.php(214): Magento\Framework\View\Element\Template\File\Resolver->getTemplateFileName()
+#10 /var/www/html/magento2/vendor/magento/framework/View/Element/Template.php(293): Magento\Framework\View\Element\Template->getTemplateFile()
+#11 /var/www/html/magento2/vendor/magento/framework/View/Element/AbstractBlock.php(1095): Magento\Framework\View\Element\Template->_toHtml()
+#12 /var/www/html/magento2/vendor/magento/framework/View/Element/AbstractBlock.php(1099): Magento\Framework\View\Element\AbstractBlock->Magento\Framework\View\Element\{closure}()
+#13 /var/www/html/magento2/vendor/magento/framework/View/Element/AbstractBlock.php(660): Magento\Framework\View\Element\AbstractBlock->_loadCache()
+#14 /var/www/html/magento2/vendor/magento/framework/View/Result/Page.php(251): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#15 /var/www/html/magento2/vendor/magento/framework/View/Result/Layout.php(171): Magento\Framework\View\Result\Page->render()
+#16 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\View\Result\Layout->renderResult()
+#17 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\View\Result\Page\Interceptor->___callParent()
+#18 /var/www/html/magento2/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\View\Result\Page\Interceptor->Magento\Framework\Interception\{closure}()
+#19 /var/www/html/magento2/generated/code/Magento/Framework/View/Result/Page/Interceptor.php(32): Magento\Framework\View\Result\Page\Interceptor->___callPlugins()
+#20 /var/www/html/magento2/vendor/magento/framework/App/Http.php(120): Magento\Framework\View\Result\Page\Interceptor->renderResult()
+#21 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#22 /var/www/html/magento2/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#23 {main} {"report_id":"aa87aefd3a4a8b9146126fdbf25672f207f018801825d0d13af628c0ab99d027","exception":"[object] (InvalidArgumentException(code: 0): Required parameter 'theme_dir' was not passed at /var/www/html/magento2/vendor/magento/framework/View/Design/Fallback/Rule/Simple.php:59)"} []

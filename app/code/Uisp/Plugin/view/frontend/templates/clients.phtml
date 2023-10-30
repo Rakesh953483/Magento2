@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @var /Uisp/Plugin/Block/Index $block
+ */
+//  echo $block->sayHello();
+$internetPlans = $block->getClient();
+// print'<pre>';
+// print_r($internetPlans);
+// die();
+?>
+<h1>Internet Plans</h1>
+<div class="maindiv">
+    <?php foreach ($internetPlans as $internetPlan) { ?>
+        <div class="plan-content">
+            <?php echo $internetPlan['name'];
+            echo $internetPlan['uploadSpeed'];
+            echo $internetPlan['downloadSpeed'];
+            // echo $internetPlan['periods']['price']; ?>
+        </div>
+    <?php } ?>
+    </ul>
+</div>

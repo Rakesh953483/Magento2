@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    require([
+        'Magento_Customer/js/customer-data'
+    ], function(customerData) {
+        'use strict';
+
+        customerData.get('cart').subscribe(function(cartInfo) {
+            
+            var value = cartInfo['summary_count'];
+            
+            document.getElementById('demo').innerHTML = value;
+        }, this);
+    });</script><p>Total number of Products in the cart is</p><p id="demo"></p><!-- <h1>test</h1> -->

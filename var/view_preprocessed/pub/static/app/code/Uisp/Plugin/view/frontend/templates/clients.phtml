@@ -1,0 +1,1 @@
+<?php /** * @var /Uisp/Plugin/Block/Index $block */ $internetPlans = $block->getClient(); ?> <h1>Internet Plans</h1><div class="maindiv"><?php foreach ($internetPlans as $internetPlan) { ?> <div class="plan-content"><?php echo $internetPlan['name']; echo $internetPlan['uploadSpeed']; echo $internetPlan['downloadSpeed']; ?></div><?php } ?></ul></div>
